@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Div Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Three Div Elements Demo</h1>
+        <p class="instructions">Click on any colored box to create a copy at the end. The clicked box will become unclickable.</p>
+        
+        <div class="box-container" id="boxContainer">
+            <div class="box red clickable" id="box1" data-box-number="1" data-color="red">
+                <span class="box-text">Red</span>
+            </div>
+            
+            <div class="box green clickable" id="box2" data-box-number="2" data-color="green">
+                <span class="box-text">Green</span>
+            </div>
+            
+            <div class="box blue clickable" id="box3" data-box-number="3" data-color="blue">
+                <span class="box-text">Blue</span>
+            </div>
+        </div>
+        
+        <div class="reset-container">
+            <button id="resetBtn" class="reset-btn">Reset All Boxes</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

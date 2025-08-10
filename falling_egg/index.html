@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling EGG Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Falling EGG Game</h1>
+        <div class="instructions">
+            <p>Use the arrow keys or mouse to move the basket and catch the falling egg!</p>
+            <p>If you miss, the egg will break on the ground.</p>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="egg" id="egg">🥚</div>
+            <div class="basket" id="basket">🧺</div>
+            <div class="ground"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="game-btn">Start Game</button>
+            <button id="resetBtn" class="game-btn">Reset</button>
+        </div>
+        
+        <div class="score-board">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="lives">Lives: <span id="lives">3</span></div>
+        </div>
+        
+        <div class="game-message" id="gameMessage"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
